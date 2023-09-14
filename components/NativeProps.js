@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import { Button, StyleSheet, Text, View } from 'react-native'
 
-const ReactProps = () => {
+const NativeProps = () => {
     const [updateText, setUpdateText] = useState("Deepak")
 
     const UpdateText = (props) => {
         return (
             <View style={style.view}>
-                <Text style={style.text}>Name: {props.name}</Text>
+                <Text style={style.updateText}>Name: {props.name}</Text>
                 <Button
                     title='Update Text'
                     onPress={() => setUpdateText('Yadav')}
@@ -18,8 +18,8 @@ const ReactProps = () => {
 
     //=================== Main_Return_Function =====================//
     return (
-        <View>
-            <Text style={{ fontSize: 25, color: "red" }}>
+        <View style={style.viewContainer}>
+            <Text style={style.text}>
                 Props In React Native
             </Text>
             <Text>:- It is an Argument / paraments of own components</Text>
@@ -34,12 +34,22 @@ const ReactProps = () => {
 
 //================== Internal_ Css_Types =====================//
 const style = StyleSheet.create({
+    viewContainer: {
+        padding: 5
+    },
+    text: {
+        alignSelf: "center",
+        textAlignVertical: "center",
+        fontSize: 20,
+        fontWeight: "bold",
+        color: "red"
+    },
     view: {
         marginTop: 5
     },
-    text: {
+    updateText: {
         fontSize: 15,
         fontWeight: "bold",
-    }
+    },
 })
-export default ReactProps
+export default NativeProps

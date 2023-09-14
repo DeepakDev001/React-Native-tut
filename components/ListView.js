@@ -2,8 +2,9 @@ import React from 'react'
 import { ScrollView, StatusBar, StyleSheet, Text, View } from 'react-native'
 import Basics from './Basics'
 import OnPressEvent from './OnPressEvent'
-import ReactState from './ReactState'
-import ReactProps from './ReactProps'
+import NativeState from './NativeState'
+import NativeProps from './NativeProps'
+import NativeForm from './NativeForm'
 
 const ListView = () => {
 
@@ -19,8 +20,9 @@ const ListView = () => {
             <ScrollView style={StyleView.scrollView}>
                 <Basics />
                 <OnPressEvent />
-                <ReactState />
-                <ReactProps />
+                <NativeState />
+                <NativeProps />
+                <NativeForm />
             </ScrollView>
         </View>
     )
@@ -29,11 +31,11 @@ const ListView = () => {
 //================== Internal_ Css_Types =====================//
 const StyleView = StyleSheet.create({
     TextHeading: {
-        padding:5,
+        padding: 5,
         fontSize: 22,
         fontWeight: "bold",
         alignSelf: "center",
-        textAlignVertical:"center",
+        textAlignVertical: "center",
         color: "blue"
 
     },

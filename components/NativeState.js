@@ -1,17 +1,17 @@
 import React, { useState } from 'react'
-import { Button, Text, View } from 'react-native'
+import { Button, StyleSheet, Text, View } from 'react-native'
 
-const ReactState = () => {
+const NativeState = () => {
   const [name, setName] = useState("Deepak");
   const [data, setData] = useState(0);
 
   //================= Main_Return_Function =============//
   return (
-    <View>
-      <Text style={{ fontSize: 25, marginTop: 20, color: "red" }}>
+    <View style={styleState.viewContainer}>
+      <Text style={styleState.text}>
         State In React Native
       </Text>
-      <Text style={{ fontSize: 20 }} >
+      <Text style={{ fontSize: 20, fontWeight: "bold" }} >
         Difference between State and  Variable
       </Text>
       <Text >
@@ -28,7 +28,7 @@ const ReactState = () => {
         title='Update Name '
         onPress={() => setName("Yadav")}
       />
-      <Text style={{ fontSize: 24, }} >Counter Function</Text>
+      <Text style={{ fontSize: 20, }} >Counter Function</Text>
       <Button
         title='Increment'
         onPress={() => setData(data + 1)}
@@ -42,4 +42,20 @@ const ReactState = () => {
   )
 }
 
-export default ReactState
+//================== Internal_ Css_Types =====================//
+
+const styleState = StyleSheet.create({
+  viewContainer: {
+    padding: 5
+  },
+  text: {
+    alignSelf: "center",
+    textAlignVertical: "center",
+    fontSize: 20,
+    fontWeight: "bold",
+    color: "red"
+  }
+
+})
+
+export default NativeState
