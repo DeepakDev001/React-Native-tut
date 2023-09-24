@@ -8,7 +8,7 @@ const NativeForm = () => {
     const [show, setShow] = useState(false)
 
     const CleraData = () => {
-        setShow(true);
+        setShow(false);
         setName("");
         setEmail("");
         setPassword("");
@@ -23,11 +23,17 @@ const NativeForm = () => {
             {
                 show ?
                     <View style={styleForm.formOpBox}>
+
+
                         <Text>Name : {name}</Text>
                         <Text>Email : {email}</Text>
                         <Text>Passwaord : {passwaord}</Text>
+
+
+
                     </View> : null
             }
+
             <View style={styleForm.formBox}>
                 <TextInput
                     style={styleForm.formTextInput}

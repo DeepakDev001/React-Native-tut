@@ -5,6 +5,8 @@ import OnPressEvent from './OnPressEvent'
 import NativeState from './NativeState'
 import NativeProps from './NativeProps'
 import NativeForm from './NativeForm'
+import NativeList from './NativeList'
+import NativeMap from './NativeMap'
 
 const ListView = () => {
 
@@ -23,6 +25,8 @@ const ListView = () => {
                 <NativeState />
                 <NativeProps />
                 <NativeForm />
+                <NativeList />
+                <NativeMap />
             </ScrollView>
         </View>
     )
