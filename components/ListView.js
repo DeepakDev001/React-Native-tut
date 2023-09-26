@@ -7,6 +7,7 @@ import NativeProps from './NativeProps'
 import NativeForm from './NativeForm'
 import NativeList from './NativeList'
 import NativeMap from './NativeMap'
+import NativeGrid from './NativeGrid'
 
 const ListView = () => {
 
@@ -27,6 +28,7 @@ const ListView = () => {
                 <NativeForm />
                 <NativeList />
                 <NativeMap />
+                <NativeGrid />
             </ScrollView>
         </View>
     )
