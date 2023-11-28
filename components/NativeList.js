@@ -49,7 +49,7 @@ const NativeList = () => {
 
 const style = StyleSheet.create({
     viewContainer: {
-        padding: 5
+        padding: 5 
     },
     text: {
         alignSelf: "center",
