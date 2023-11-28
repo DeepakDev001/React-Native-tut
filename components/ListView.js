@@ -9,6 +9,7 @@ import NativeList from './NativeList'
 import NativeMap from './NativeMap'
 import NativeGrid from './NativeGrid'
 import NativeCompLoopFlatList from './NativeCompLoopFlatList'
+import NativeSectionList from './NativeSectionList'
 
 const ListView = () => {
 
@@ -31,6 +32,7 @@ const ListView = () => {
                 <NativeMap />
                 <NativeGrid />
                 <NativeCompLoopFlatList />
+                <NativeSectionList />
             </ScrollView>
         </View>
     )

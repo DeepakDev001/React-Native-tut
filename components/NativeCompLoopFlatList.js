@@ -22,12 +22,13 @@ const NativeCompLoopFlatList = () => {
                 <Text style={style.text}>
                     Component In Loop With FlatList
                 </Text>
-                <FlatList
-                    data={UserArray}
-                    renderItem={({ item }) => <Userata item={item} />}
-                    keyExtractor={item => item.id}
-                />
             </View>
+            <FlatList
+                data={UserArray}
+                renderItem={({ item }) => <Userata item={item} />}
+                keyExtractor={item => item.id}
+                scrollEnabled={false}
+            />
         </Fragment>
     )
 }
@@ -48,7 +49,7 @@ const style = StyleSheet.create({
         borderWidth: 2
     },
     FlatListText: {
-        fontSize: 24,
+        fontSize: 15,
         color: "orange",
         flex: 1,
         margin: 2,
