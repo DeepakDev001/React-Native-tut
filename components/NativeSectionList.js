@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { SectionList, StyleSheet, Text, View } from 'react-native'
+import { SectionUserData } from './DummyArray/DummyArray'
 
 const NativeSectionList = () => {
     //================= main_return_function ==================//
@@ -10,6 +11,14 @@ const NativeSectionList = () => {
                     Component In Loop With FlatList
                 </Text>
             </View>
+            <SectionList
+                sections={SectionUserData}
+                renderItem={({ item }) => <Text>{item}</Text>}
+                renderSectionHeader={({ section: { name } }) => (
+                    <Text style={style.textHeader}>{name}</Text>
+                )}
+                scrollEnabled={false}
+            />
         </Fragment>
     )
 }
@@ -23,6 +32,11 @@ const style = StyleSheet.style = ({
         fontSize: 20,
         fontWeight: "bold",
         color: "red"
+    },
+    textHeader: {
+        fontSize: 23,
+        color: "green",
+        fontWeight: "bold",
     }
 })
 export default NativeSectionList

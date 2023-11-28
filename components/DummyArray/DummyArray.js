@@ -16,3 +16,21 @@ export const UserArray = [
     }
 
 ]  
+
+export const SectionUserData=[
+    {
+        id: 1,
+        name: "Deepak",
+        data: ["JavaScript","React","Angular"]
+    },
+    {
+        id: 2,
+        name: "Dev",
+        data: ["c","Python","C++"]
+    },
+    {
+        id: 3,
+        name: "DevTool",
+        data: ["Css","Bootstrap","Html"]
+    }
+]
