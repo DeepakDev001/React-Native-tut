@@ -45,14 +45,19 @@ const style = StyleSheet.create({
     },
     box: {
         flexDirection: "row",
-        borderColor: "red",
+        borderColor: "green",
         borderWidth: 2
     },
     FlatListText: {
         fontSize: 15,
-        color: "orange",
+        color: "white",
         flex: 1,
         margin: 2,
+        fontWeight: "bold",
+        padding: 5,
+        textAlign: "center",
+        backgroundColor: "black"
+
     }
 })
 
