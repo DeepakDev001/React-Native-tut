@@ -13,7 +13,7 @@ const NativeSectionList = () => {
             </View>
             <SectionList
                 sections={SectionUserData}
-                renderItem={({ item }) => <Text>{item}</Text>}
+                renderItem={({ item }) => <Text style={style.textRenderItem}>{item}</Text>}
                 renderSectionHeader={({ section: { name } }) => (
                     <Text style={style.textHeader}>{name}</Text>
                 )}
@@ -37,6 +37,12 @@ const style = StyleSheet.style = ({
         fontSize: 23,
         color: "green",
         fontWeight: "bold",
+    },
+    textRenderItem: {
+        marginLeft: 10,
+        fontWeight: "bold"
+
     }
+
 })
 export default NativeSectionList
