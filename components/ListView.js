@@ -10,7 +10,11 @@ import NativeMap from './NativeMap'
 import NativeGrid from './NativeGrid'
 import NativeCompLoopFlatList from './NativeCompLoopFlatList'
 import NativeSectionList from './NativeSectionList'
-import Test from './test'
+import NativeUseEffect from './NativeUseEffect'
+import NativeCompDidUpdate from './NativeCompDidUpdate'
+import NativeShowHide from './NativeShowHide'
+
+
 
 const ListView = () => {
 
@@ -34,7 +38,9 @@ const ListView = () => {
                 <NativeGrid />
                 <NativeCompLoopFlatList />
                 <NativeSectionList />
-                <Test/>
+                <NativeUseEffect />
+                <NativeCompDidUpdate />
+                <NativeShowHide />
             </ScrollView>
         </View>
     )
