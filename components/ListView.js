@@ -13,6 +13,10 @@ import NativeSectionList from './NativeSectionList'
 import NativeUseEffect from './NativeUseEffect'
 import NativeCompDidUpdate from './NativeCompDidUpdate'
 import NativeShowHide from './NativeShowHide'
+import NativeButton from './NativeButton'
+import NativeRadio from './NativeRadio'
+import NativeRadioDyn from './NativeRadioDyn'
+import ActivityIndicator from './ActivityIndicator'
 
 
 
@@ -41,6 +45,10 @@ const ListView = () => {
                 <NativeUseEffect />
                 <NativeCompDidUpdate />
                 <NativeShowHide />
+                <NativeButton />
+                <NativeRadio />
+                <NativeRadioDyn />
+                <ActivityIndicator />
             </ScrollView>
         </View>
     )

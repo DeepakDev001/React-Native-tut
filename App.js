@@ -8,7 +8,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <ListView />
-      <NativeRespGrid />
+      {/* <NativeRespGrid /> */}
       {/* <ImageBackground source={image} resizeMode="cover" style={styles.image} >
         <ReactStyle />
       </ImageBackground> */}
